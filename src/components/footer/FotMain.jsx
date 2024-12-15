@@ -86,7 +86,7 @@ export default function FotMain() {
             </Stack>
           </AccordionItemTrigger>
           <AccordionItemContent>
-          {about.map((e,i)=><Box><Link><Text _hover={linkHoverStyle}>{e.title}</Text></Link></Box>)}
+          {about.map((e,i)=><Box key={i}><Link><Text _hover={linkHoverStyle}>{e.title}</Text></Link></Box>)}
           </AccordionItemContent>
         </AccordionItem>
       ))}
@@ -96,22 +96,22 @@ export default function FotMain() {
             <Box w='100%' display={{base:'none',md:"flex"}} justifyContent={'space-between'} fontSize={'14px'} >
             <Flex gap={3} flexDir={'column'}>
                 <Box fontSize={'16px'} fontWeight={'600'}><h1>About Zappos</h1></Box>
-                {about.map((e,i)=><Box><Link><Text _hover={linkHoverStyle}>{e.title}</Text></Link></Box>)}
+                {about.map((e,i)=><Box key={i}><Link><Text _hover={linkHoverStyle}>{e.title}</Text></Link></Box>)}
             </Flex>
             <Box><Hr/></Box>
             <Flex gap={3}  flexDir={'column'} >
                 <Box fontSize={'16px'} fontWeight={'600'}><h1>Customer Service</h1></Box>
-                {customerService.map((e,i)=><Box><Link><Text _hover={linkHoverStyle}>{e.title}</Text></Link></Box>)}
+                {customerService.map((e,i)=><Box key={i}><Link><Text _hover={linkHoverStyle}>{e.title}</Text></Link></Box>)}
             </Flex>
             <Box><Hr/></Box>
             <Flex gap={3}  flexDir={'column'}>
                 <Box fontSize={'16px'} fontWeight={'600'}><h1>Resources</h1></Box>
-                {resources.map((e,i)=><Box><Link><Text _hover={linkHoverStyle}>{e.title}</Text></Link></Box>)}
+                {resources.map((e,i)=><Box key={i}><Link><Text _hover={linkHoverStyle}>{e.title}</Text></Link></Box>)}
             </Flex>
             <Box><Hr/></Box>
             <Flex gap={3}  flexDir={'column'}>
                 <Box fontSize={'16px'} fontWeight={'600'}><h1>Explore Zappos</h1></Box>
-                {exploreZappos.map((e,i)=><Box><Link><Text _hover={linkHoverStyle}>{e.title}</Text></Link></Box>)}
+                {exploreZappos.map((e,i)=><Box key={i}><Link><Text _hover={linkHoverStyle}>{e.title}</Text></Link></Box>)}
             </Flex>
             </Box>
         </Flex>

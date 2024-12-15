@@ -1,0 +1,13 @@
+::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgb(247, 217, 217);
+    border-radius: 4px;
+  }
+  
+  /* ::-webkit-scrollbar-thumb:hover {
+    background: rgb(0, 0, 0);
+  } */
+  
